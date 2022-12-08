@@ -331,3 +331,17 @@ html {
 		height: 0;
 	}
 }
+
+@media screen and (max-width:768px) {
+	.services .box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.el {
+			width: 90%;
+			margin-bottom: 2rem;
+		}
+	}
+
+}
