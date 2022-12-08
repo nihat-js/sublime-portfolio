@@ -1,0 +1,75 @@
+.left-nav {
+   position: fixed;
+   top: 50%;
+   left: 0;
+   transform: translate(0, -50%);
+
+   .content {
+      display: flex;
+      flex-direction: column;
+
+      a {
+         img {
+            width: 24px;
+            margin-bottom: .4rem;
+         }
+      }
+   }
+}
+
+@keyframes wave {
+   0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   100% {
+      clip-path: polygon(0 60%, 20% 70%, 30% 75%, 50% 60%, 70% 50%, 90% 60%, 100% 50%, 100% 0%);
+   }
+}
+
+@keyframes slide-down {
+   0% {
+      top: -500px;
+   }
+
+   100% {
+      top: 0;
+   }
+}
+
+@keyframes slide-up {
+   0% {
+      bottom: -1200px;
+   }
+
+   100% {
+      bottom: 0;
+   }
+}
+
+.slide-down {
+   animation: .5s slide-down;
+}
+
+.slide-up {
+   animation: .5s slide-up;
+}
+
+.scroll {
+   position: absolute;
+   bottom: 15px;
+   left: 50%;
+   transform: translatex(-50%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .title {
+      margin-bottom: .6rem;
+   }
+
+   img {
+      width: 32px;
+      cursor: pointer;
+   }
+}

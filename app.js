@@ -79,10 +79,12 @@ window.addEventListener('scroll', () => {
       document.querySelector('.right-nav li:nth-child(1)').classList.add('active')
    } else if (current < .5) {
       document.querySelector('.right-nav li:nth-child(2)').classList.add('active')
-      
+
    } else if (current < .75) {
       document.querySelector('.right-nav li:nth-child(3)').classList.add('active')
-      
+      document.querySelector('.work .box2 .el').classList.remove('resize-box');
+      document.querySelector('.work .box2 .el').classList.add('resize-box');
+
    } else if (current < 1) {
       document.querySelector('.right-nav li:nth-child(4)').classList.add('active')
    }

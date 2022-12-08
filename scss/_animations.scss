@@ -1,0 +1,27 @@
+.resize-box {
+   animation: 1s resize-box;
+}
+
+@keyframes change-bg {
+   0% {
+      background-image: url("../img/box-bg.svg");
+   }
+
+   100% {
+      background-image: url("../img/box-bg-hover.svg");
+
+   }
+}
+
+
+@keyframes resize-box {
+   0% {
+      width: 0;
+      height: 0;
+   }
+
+   100% {
+      width: 300px;
+      height: 188px;
+   }
+}

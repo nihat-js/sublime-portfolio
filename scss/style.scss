@@ -15,6 +15,8 @@ html {
 }
 
 
+@import "animations";
+
 
 .right-nav {
 	position: fixed;
@@ -40,28 +42,10 @@ html {
 	}
 }
 
-.scroll {
-	position: absolute;
-	bottom: 15px;
-	left: 50%;
-	transform: translatex(-50%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 
-	.title {
-		margin-bottom: .6rem;
-	}
-
-	img {
-		width: 32px;
-		cursor: pointer;
-	}
-}
 
 .home {
 	background-color: #050505;
-	width: 100vw;
 	padding: 5rem 0;
 
 	.content {
@@ -188,64 +172,6 @@ html {
 }
 
 
-.left-nav {
-	position: fixed;
-	top: 50%;
-	left: 0;
-	transform: translate(0, -50%);
-
-	.content {
-		display: flex;
-		flex-direction: column;
-
-		a {
-			img {
-				width: 24px;
-				margin-bottom: .4rem;
-			}
-		}
-	}
-}
-
-
-
-@keyframes wave {
-	0% {
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-	}
-
-	100% {
-		clip-path: polygon(0 60%, 20% 70%, 30% 75%, 50% 60%, 70% 50%, 90% 60%, 100% 50%, 100% 0%);
-	}
-}
-
-@keyframes slide-down {
-	0% {
-		top: -500px;
-	}
-
-	100% {
-		top: 0;
-	}
-}
-
-@keyframes slide-up {
-	0% {
-		bottom: -1200px;
-	}
-
-	100% {
-		bottom: 0;
-	}
-}
-
-.slide-down {
-	animation: .5s slide-down;
-}
-
-.slide-up {
-	animation: .5s slide-up;
-}
 
 
 .work {
@@ -312,12 +238,28 @@ html {
 				margin-right: 100px;
 				margin-bottom: 3rem;
 				transition: .4s all;
-				animation: .1s resize-box;
-
-				&:hover {
-					background-image: url("../img/box-bg-hover.svg");
-					cursor: pointer;
+				animation: change-bg 3s infinite alternate-reverse;
+				// display: flex;
+				// flex-direction: column;
+				// align-items: center;
+				.title {
+					// text-align: center;
+					margin-bottom: .3rem;
 				}
+
+				.desc {
+					margin-bottom: .2rem;
+				}
+
+				button {
+					padding: 1rem 1.5rem; 
+					border: 3px solid hsl(53, 84%, 20%) ;
+					font-size: bold;
+					background: transparent;
+					font-size: 1.2rem;
+					color: #f1d817;
+				}
+
 			}
 
 		}
@@ -325,12 +267,9 @@ html {
 }
 
 
-@keyframes resize-box {
-	0% {
-		width: 0;
-		height: 0;
-	}
-}
+
+
+
 
 @media screen and (max-width:768px) {
 	.services .box {
