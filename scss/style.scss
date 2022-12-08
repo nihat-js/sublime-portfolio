@@ -232,7 +232,7 @@ html {
 			.el {
 				width: 300px;
 				height: 188px;
-				padding: 1.5rem 2rem;
+				padding: .8rem 1.2rem;
 				background-image: url('../img/box-bg.svg');
 				background-size: cover;
 				margin-right: 100px;
@@ -245,12 +245,13 @@ html {
 				// align-items: center;
 				.title {
 					// text-align: center;
-					margin-bottom: .3rem;
+					margin-bottom: 1.25rem;
 				}
 
 				.desc {
-					margin-bottom: 1rem;
-					padding: .4rem 0;
+					margin-bottom: 1.25rem;
+
+					// padding: .4rem 0;
 					.tag {
 						background-color: hsl(60, 84%, 20%);
 						border-radius: 4px;
@@ -260,12 +261,16 @@ html {
 				}
 
 				button {
+					display: block;
+					width: 50%;
+					margin: auto;
+					text-align: center;
 					padding: .4rem .7rem;
-					border: 3px solid hsl(0, 84%, 20%);
+					border: 3px solid hsl(60, 84%, 20%);
 					font-size: bold;
 					background: transparent;
 					font-size: 1.2rem;
-					color: hsl(0, 84%, 20%);
+					color: hsl(60, 84%, 20%);
 				}
 
 			}

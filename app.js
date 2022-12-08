@@ -1,7 +1,7 @@
 // let pages = ['home', 'services',]
 // let activePage = 0;
-// let fullName = "Nihat Abdullazade"
-
+let fullName = "Nihat Abdullazade"
+let f = 0;
 
 
 
@@ -91,3 +91,12 @@ window.addEventListener('scroll', () => {
 
 })
 
+
+const timer_1 = setInterval(() => {
+   if (f < fullName.length) {
+      document.querySelector('.home .title').innerText = fullName.substring(0, f+1)
+      f++;
+   } else {
+      clearInterval(timer_1)
+   }
+}, 60)
