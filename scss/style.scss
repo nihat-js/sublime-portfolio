@@ -222,6 +222,15 @@ html {
 				cursor: pointer;
 
 			}
+
+			&:hover {
+				border-color: hsl(176, 84%, 70%);
+
+				button {
+					border-color: hsl(344, 84%, 70%);
+					color: hsl(176, 84%, 70%);
+				}
+			}
 		}
 
 		.box2 {
@@ -263,7 +272,6 @@ html {
 				button {
 					display: block;
 					width: 50%;
-					margin: auto;
 					text-align: center;
 					padding: .4rem .7rem;
 					border: 3px solid hsl(60, 84%, 20%);
@@ -271,6 +279,7 @@ html {
 					background: transparent;
 					font-size: 1.2rem;
 					color: hsl(60, 84%, 20%);
+					margin-top: 1.5rem;
 				}
 
 			}

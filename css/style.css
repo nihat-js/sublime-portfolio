@@ -221,6 +221,13 @@ html {
   font-weight: bolder;
   cursor: pointer;
 }
+.work .content .box:hover {
+  border-color: hsl(176deg, 84%, 70%);
+}
+.work .content .box:hover button {
+  border-color: hsl(344deg, 84%, 70%);
+  color: hsl(176deg, 84%, 70%);
+}
 .work .content .box2 {
   margin-top: 6rem;
   display: flex;
@@ -252,7 +259,6 @@ html {
 .work .content .box2 .el button {
   display: block;
   width: 50%;
-  margin: auto;
   text-align: center;
   padding: 0.4rem 0.7rem;
   border: 3px solid hsl(60deg, 84%, 20%);
@@ -260,6 +266,7 @@ html {
   background: transparent;
   font-size: 1.2rem;
   color: hsl(60deg, 84%, 20%);
+  margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
