@@ -69,7 +69,23 @@
 // }, 50)
 
 
-document.body.scroll(e=>{
-   
+
+window.addEventListener('scroll', () => {
+   let max = 1144
+   let current = window.pageYOffset / max;
+   document.querySelectorAll('.right-nav li').forEach(x => x.classList.remove('active'))
+
+   if (current < .25) {
+      document.querySelector('.right-nav li:nth-child(1)').classList.add('active')
+   } else if (current < .5) {
+      document.querySelector('.right-nav li:nth-child(2)').classList.add('active')
+      
+   } else if (current < .75) {
+      document.querySelector('.right-nav li:nth-child(3)').classList.add('active')
+      
+   } else if (current < 1) {
+      document.querySelector('.right-nav li:nth-child(4)').classList.add('active')
+   }
+
 })
 
