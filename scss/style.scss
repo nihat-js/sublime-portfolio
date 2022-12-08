@@ -232,13 +232,14 @@ html {
 			.el {
 				width: 300px;
 				height: 188px;
-				padding: 2.5rem 4rem;
+				padding: 1.5rem 2rem;
 				background-image: url('../img/box-bg.svg');
 				background-size: cover;
 				margin-right: 100px;
 				margin-bottom: 3rem;
 				transition: .4s all;
 				animation: change-bg 3s infinite alternate-reverse;
+
 				// display: flex;
 				// flex-direction: column;
 				// align-items: center;
@@ -248,16 +249,23 @@ html {
 				}
 
 				.desc {
-					margin-bottom: .2rem;
+					margin-bottom: 1rem;
+					padding: .4rem 0;
+					.tag {
+						background-color: hsl(60, 84%, 20%);
+						border-radius: 4px;
+						padding: .3rem .5rem;
+						margin-right: .4rem;
+					}
 				}
 
 				button {
-					padding: 1rem 1.5rem; 
-					border: 3px solid hsl(53, 84%, 20%) ;
+					padding: .4rem .7rem;
+					border: 3px solid hsl(0, 84%, 20%);
 					font-size: bold;
 					background: transparent;
 					font-size: 1.2rem;
-					color: #f1d817;
+					color: hsl(0, 84%, 20%);
 				}
 
 			}

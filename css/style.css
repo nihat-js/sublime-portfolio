@@ -229,7 +229,7 @@ html {
 .work .content .box2 .el {
   width: 300px;
   height: 188px;
-  padding: 2.5rem 4rem;
+  padding: 1.5rem 2rem;
   background-image: url("../img/box-bg.svg");
   background-size: cover;
   margin-right: 100px;
@@ -241,15 +241,22 @@ html {
   margin-bottom: 0.3rem;
 }
 .work .content .box2 .el .desc {
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0;
+}
+.work .content .box2 .el .desc .tag {
+  background-color: hsl(60deg, 84%, 20%);
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.4rem;
 }
 .work .content .box2 .el button {
-  padding: 1rem 1.5rem;
-  border: 3px solid hsl(53deg, 84%, 20%);
+  padding: 0.4rem 0.7rem;
+  border: 3px solid hsl(0deg, 84%, 20%);
   font-size: bold;
   background: transparent;
   font-size: 1.2rem;
-  color: #f1d817;
+  color: hsl(0deg, 84%, 20%);
 }
 
 @media screen and (max-width: 768px) {
