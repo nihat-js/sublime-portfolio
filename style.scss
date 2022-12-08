@@ -14,14 +14,10 @@ html {
 	display: none;
 }
 
-main {
 
-	width: 100vw;
-	height: 100vh;
-}
 
 .right-nav {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	right: 20px;
 	transform: translateY(-50%);
@@ -64,10 +60,9 @@ main {
 }
 
 .home {
-	background-color: #231f90;
-	position: absolute;
+	background-color: #111;
 	width: 100vw;
-	height: 100vh;
+	padding: 5rem 0;
 
 	.content {
 		display: flex;
@@ -78,15 +73,16 @@ main {
 		.title {
 			font-weight: bold;
 			font-size: 4rem;
-			color: #fff;
-			margin-bottom: 1rem;
+			color: #62f2e8;
+			margin-bottom: 2rem;
 			letter-spacing: 1px;
 			text-transform: uppercase;
 		}
 
 		.desc {
 			font-weight: bold;
-			font-size: 3rem;
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			background-color: #bd355a;
@@ -100,12 +96,18 @@ main {
 				margin-top: 1.25rem;
 				padding: 1rem 1.5rem;
 				font-size: 1.5rem;
-				color: #bd355a;
-				background-color: #fff;
+				color: #111;
+				background-color: #62f2e8;
 				border: none;
 				border-radius: 5px;
 				font-weight: bold;
 				cursor: pointer;
+			}
+
+			button:hover {
+				color: #62f2e8;
+				background-color: #111;
+				border: 2px solid #000;
 			}
 
 			.btn-2 {
@@ -117,13 +119,6 @@ main {
 	}
 }
 
-.w-0 {
-	width: 0;
-}
-
-.w-100 {
-	width: 100vw;
-}
 
 
 .services {
@@ -137,10 +132,22 @@ main {
 		max-width: 1200px;
 		margin: 2rem auto;
 
+		&>.title {
+			font-size: 3rem;
+			text-align: center;
+			margin-bottom: 1.25rem;
+		}
+
+		&>.desc {
+			font-size: 2rem;
+			text-align: center;
+			margin-bottom: 4rem;
+		}
+
 		.box {
 			display: flex;
 			justify-content: space-between;
-			
+
 			.el {
 				width: 250px;
 				padding: 2rem;
